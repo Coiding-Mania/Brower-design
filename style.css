@@ -1,0 +1,535 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://i.ibb.co/9pFmq8j/pexels-photo.jpg" alt="pexels-photo');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+  
+    .search-container form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
+    /* Style the search input field */
+    .search-container input[type="text"] {
+        width: 300px;
+        padding: 8px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        font-size: 16px;
+    }
+
+    /* Style the search button */
+    .search-container button[type="submit"] {
+        background-color: #164898; 
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 20px;
+        margin-left: 60px;
+      margin-top: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 1s ease;
+    }
+
+    .search-container button[type="submit"]:hover {
+        background-color: #357ae8; /* Darker color on hover */
+    }
+
+    h1 {
+        font-size: 36px;
+        position: absolute;
+        top: calc(50% - 50px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        z-index: 1;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: blue;
+        text-shadow: 0 0 5px violet, 0 0 5px indigo, 0 0 5px blue, 0 0 5px green, 0 0 5px yellow, 0 0 5px orange, 0 0 5px red;
+    }
+
+    .footer {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer a {
+        color: #4285f4;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+  .rhombus-container {
+      position: absolute;
+      top: 100px; /* Adjust as needed */
+      left: 90%;
+      transform: translateX(-50%);
+      z-index: 0; /* Ensure it's behind other content */
+  }
+
+  .rectangle-container {
+      position: relative;
+      width: 200px; /* Increase width */
+      height: 150px; /* Increase height */
+      margin-top: -40px; /* Half of the height to center it properly */
+  }
+
+  .rectangle {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 10); /* Transparent white */
+      border-radius: 10px; /* Adjust border radius as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .red-circle-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px; /* Adjust the gap between icons */
+  }
+
+  .red-circle {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 2s ease;
+      margin: 10px; /* Adjust the margin around icons */
+  }
+
+  .red-circle-tooltip {
+      position: absolute;
+      font-size: 14px;
+      color: white;
+      display: none; /* Hide tooltip by default */
+  }
+
+  .red-circle:hover .red-circle-tooltip {
+      display: block; /* Show tooltip on hover */
+  }
+
+
+
+  .rectangle-container {
+      position: absolute;
+      top: 200px; /* Adjust as needed */
+      left: 90%;
+      transform: translateX(-50%);
+      z-index: 0; /* Ensure rectangle is behind the search container */
+  }
+
+  .rectangle {
+      position: relative;
+      width: 200px; /* Increase width */
+      height: 250px; /* Increase height */
+      background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
+      border-radius: 10px; /* Adjust border radius as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -40px; /* Half of the height to center it properly */
+  }
+
+  .rectangle-text {
+      color: yellow; /* Change text color to yellow */
+      font-weight: bold;
+      font-size: 20px; /* Increase font size */
+  }
+
+  .red-circle-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  .red-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+  }
+
+  .red-circle-tooltip {
+      position: absolute;
+      font-size: 14px;
+      color: white;
+      display: none;
+  }
+
+  .red-circle:hover .red-circle-tooltip {
+      display: block;
+  }
+
+
+  #youtubeCircle {
+      background-image: url('https://i.ibb.co/Gx8JXvQ/1384060.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #instagramCircle {
+      background-image: url('https://i.ibb.co/866Mzy3/2111463.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #discordCircle {
+      background-image: url('https://i.ibb.co/kq4LqtW/discord-icon-1024x1024-nogerd99.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #whatsappCircle {
+      background-image: url('https://i.ibb.co/h2W9bNy/3670051.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #gmailCircle {
+    background-image: url('https://i.ibb.co/FDwCwyR/5968534.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+  #facebookCircle {
+      background-image: url('https://i.ibb.co/M14BmV0/360-F-532200355-od-KN9-Ou3-WB6i-HWJTFIEl-Ft-Jb-Tuz-Jsp-Y6.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  .green-circle {
+      width: 50px;
+      height: 50px;
+    background-image: url('https://i.ibb.co/XsVWwTk/1681038242chatgpt-logo-png.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .green-circle:hover {
+      background-color: darkgreen;
+  }
+
+  .green-circle-tooltip {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: white;
+  }
+
+
+
+  .square-container {
+      position: absolute;
+      top: 700px; /* Adjust as needed */
+      left: 10%;
+      transform: translateX(-50%);
+      z-index: 0; /* Ensure square is behind the search container */
+  }
+
+  .square {
+      position: relative;
+      width: 200px; /* Width of the square */
+      height: 200px; /* Height of the square */
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -40px; /* Half of the height to center it properly */
+  }
+
+  .square-text {
+      color: yellow; 
+      font-weight: bold;
+      font-size: 20px; 
+  }
+  .search-replit-container {
+      position: absolute;
+      top: calc(50% + 100px); /* Adjust as needed */
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .replit-circle {
+      width: 50px;
+      height: 50px;
+    background-image: url('https://i.ibb.co/KszYyrw/community-Icon-tuv7ujd1bt7a1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .replit-circle:hover {
+      background-color: darkorange;
+  }
+
+  .replit-circle-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: white;
+  }
+
+  /* CSS styles for GitHub circle */
+  .github-circle-container {
+      position: absolute;
+      top: calc(50% + 100px); /* Adjust as needed */
+      left: 60%;
+      transform: translateX(-50%);
+  }
+
+  .github-circle {
+      width: 50px;
+      height: 50px;
+      background-image: url('https://i.ibb.co/F5gQd3b/360-F-452184858-i-ZXf-I1h2-Bd-KB5i9c-Dwpu9-Ue1il8-Mxxfq.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .github-circle:hover {
+      background-color: darkorange; /* Change the color on hover */
+  }
+
+  /* CSS styles for Minecraft circle */
+  .minecraft-circle-container {
+      position: absolute;
+      top: calc(50% + 100px); /* Adjust as needed */
+      right: 57%;
+      transform: translateX(-50%);
+  }
+
+  .minecraft-circle {
+      width: 50px;
+      height: 50px;
+      background-image: url('https://i.ibb.co/XsXFqqQ/minecraft-icon-1024x1024-3v7afpnj.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .minecraft-circle:hover {
+      background-color: darkorange; /* Change the color on hover */
+  }
+
+  /* Tooltip for Minecraft circle */
+  .minecraft-circle-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: white;
+  }
+
+
+  /* Tooltip for GitHub circle */
+  .github-circle-tooltip {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: white;
+  }
+
+
+  .calendar-container {
+      position: absolute;
+      top: 20px; /* Adjust as needed */
+      left: 20px; /* Adjust as needed */
+      z-index: 1; /* Ensure it's above other content */
+  }
+
+
+
+  #clock-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: rgba(255, 255, 255, 0.4); /* Transparent background */
+      border-radius: 20px; /* Rounded corners */
+      padding: 10px; /* Padding for content */
+  }
+
+  #clock {
+      font-size: 34px;
+      color: #b69d0c;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+
+  .calendar-input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+  }
+
+  .date-display {
+      position: absolute;
+      top: 20px; 
+      left: 20px;
+      font-size: 34px;
+      text-decoration: underline;
+      text-decoration-color: #10a37f;
+      color: #10a37f;
+      font-style: italic; 
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+h2{
+  color: gold;
+  position: absolute;
+  top:96%;
+  right: 5%;
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+}
+
+button {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 26px;
+    color: aqua;
+    background-color: transparent;
+    border: 2px solid aqua;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 1s ease;
+    top: 10%;
+    left: 50%;
+}
+
+button:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.sites-box {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+.circle-site {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://i.ibb.co/7C6HczQ/Coding-Mania-pfp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle-site :hover {
+     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
+html {
+  height: 100%;
+  width: 100%;
+}

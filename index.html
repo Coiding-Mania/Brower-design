@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code search</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+  
+
+<body>
+  <div id="clock"></div>
+   <div class="date-display" id="dateDisplay"></div>
+    <h1 id="randomText"> Coding Is love ❤</h1>
+
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" placeholder="Search Google..." name="q">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+  <div class="search-replit-container">
+      <div class="replit-circle" id="replitCircle"></div>
+      <div class="replit-circle-tooltip">Replit</div>
+  </div>
+
+  <div class="github-circle-container">
+      <div class="github-circle" id="githubCircle"></div>
+      <div class="github-circle-tooltip">GitHub</div>
+  </div>
+
+  <div class="minecraft-circle-container">
+      <div class="minecraft-circle" id="minecraftCircle"></div>
+      <div class="minecraft-circle-tooltip">Minecraft</div>
+  </div>
+
+
+  <div class="rhombus-container">
+      <div class="rectangle-container">
+          <div class="rectangle">
+              <span class="rectangle-text"></span>
+              <div class="red-circle-container">
+                <div class="red-circle" id="youtubeCircle"></div>
+                <div class="red-circle-tooltip">YouTube</div>
+                
+                  <div class="red-circle" id="instagramCircle"></div>
+                  <div class="red-circle-tooltip">Instagram</div>
+
+                  <div class="red-circle" id="discordCircle"></div>
+                  <div class="red-circle-tooltip">Discord</div>
+
+                  <div class="red-circle" id="whatsappCircle"></div>
+                  <div class="red-circle-tooltip">WhatsApp</div>
+
+                  <div class="red-circle" id="facebookCircle"></div>
+                  <div class="red-circle-tooltip">Facebook</div>
+
+                  <div class="red-circle" id="gmailCircle"></div>
+                  <div class="red-circle-tooltip">Gmail</div> 
+                
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="square-container">
+      <div class="square">
+          <span class="square-text"></span>
+          <div class="green-circle-container">
+              <div class="green-circle" id="gptCircle"></div>
+              <div class="green-circle-tooltip">Chat Gpt</div>
+          </div>
+      </div>
+  </div>
+
+
+  <script src="randomcolor.js"></script>
+  <script src="time.js"></script>
+  <script src="date.js"></script>
+
+  <!-- sites box -->
+  <div class="sites-box">
+   
+        <a href="https://discord.gg/uZHrDR3Bv8" target="_blank">
+            <div class="circle-site"></div>
+        </a>
+    </div>
+
+            
+  </div>
+
+
+  <!--Scripts For Links container-->
+  <script>
+    document.getElementById('githubCircle').addEventListener('click', function () {
+        window.open('https://github.com/', '_blank');
+    });
+  </script>
+
+  <script>
+
+      document.getElementById('minecraftCircle').addEventListener('click', function () {
+          window.open('https://minecraft.net', '_blank');
+      });
+  </script>
+  
+  <script>
+   
+    document.getElementById('youtubeCircle').addEventListener('click', function () {
+        window.open('https://youtube.com/@CodingMania69?si=l5KFTsJ6usS7IHXq', '_blank');
+    });
+  </script>
+
+  <script>
+
+    document.getElementById('gptCircle').addEventListener('click', function () {
+        window.open('https://chat.openai.com/', '_blank');
+    });
+  </script>
+
+  <script>
+document.getElementById('youtubeCircle').addEventListener('click', function () {
+        window.open('https://www.youtube.com/', '_blank');
+    });
+  </script>
+
+    <script>
+  document.getElementById('instagramCircle').addEventListener('click', function () {
+          window.open('https://www.instagram.com/', '_blank');
+      });
+    </script>
+
+    <script>
+  document.getElementById('discordCircle').addEventListener('click', function () {
+          window.open('https://discord.com/', '_blank');
+      });
+    </script>
+
+    <script>
+  document.getElementById('whatsappCircle').addEventListener('click', function () {
+          window.open('https://web.whatsapp.com/', '_blank');
+      });
+    </script>
+
+    <script>
+  document.getElementById('facebookCircle').addEventListener('click', function () {
+          window.open('https://www.facebook.com/', '_blank');
+      });
+    </script>
+
+   <h2 id="madeBy">Made By Akshat Sharma</h2>
+  <script>
+      document.getElementById('madeBy').addEventListener('click', function () {
+          window.location.href = 'https://www.instagram.com/_sky_ak47/';
+      });
+  </script>
+
+   <script>
+    document.getElementById('gmailCircle').addEventListener('click', function () {
+            window.open('https://mail.google.com/mail', '_blank');
+        });
+      </script>
+
+  
+  <button id="changeBackgroundBtn">➤</button>
+ 
+  
+  <script>
+     
+      const images = [
+        'https://i.ibb.co/9pFmq8j/pexels-photo.jpg',
+        'https://i.ibb.co/LNw5gWb/free-photo-of-abundance-of-beads.jpg',
+        'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg',
+        'https://images.pexels.com/photos/1410224/pexels-photo-1410224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        
+        'https://images.pexels.com/photos/1450963/pexels-photo-1450963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      ];
+
+      const button = document.getElementById('changeBackgroundBtn');
+      let currentIndex = 0;
+
+      button.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+      });
+  </script>
+  </body>
+
+  </html>
+ 
